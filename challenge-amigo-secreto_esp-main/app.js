@@ -31,12 +31,11 @@ function sortearAmigo() {
 
     amigoSorteado = listaAmigosSorteo[numeroGenerado];
     let resultado = document.getElementById('resultado');
-    // let listaAmigos = document.getElementById('listaAmigos');
     document.getElementById('listaAmigos').value = "";
 
     let addResultado = document.createElement('li');
-    addResultado.textContent= amigoSorteado;
-    resultado.appendChild(addResultado);
+    addResultado.textContent= 'El amigo secreto es: '+amigoSorteado;
+    resultado.appendChild( addResultado);
 
     if( listaAmigosSorteo ){
         let listaAmigos = document.getElementById('listaAmigos');
